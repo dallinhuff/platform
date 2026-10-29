@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: infra-obs
+  name: pyroscope
+spec:
+  selector:
+    app: lgtm
+  ports:
+    - protocol: TCP
+      port: 4040
+      targetPort: 4040

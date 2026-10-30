@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - cert-manager.yml
   - envoy-gateway.yml
+  - cnpg.yml
